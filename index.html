@@ -193,6 +193,17 @@
   }
   .text-center { text-align: center; }
 
+  /* ─── DECORATIVE BOTANICAL ELEMENTS ─── */
+  .deco-leaf {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.13;
+    user-select: none;
+  }
+  .deco-leaf img { width: 100%; height: 100%; object-fit: contain; }
+  @media(max-width:768px){ .deco-leaf { display: none; } }
+
   /* ─── SECTION 1: HERO ─── */
   #hero {
     background: var(--cream);
@@ -989,7 +1000,10 @@
 <!-- ═══════════════════════════════════════════
      SECTION 2 — PAIN POINTS
 ═══════════════════════════════════════════ -->
-<section id="pain" class="section">
+<section id="pain" class="section" style="position:relative;overflow:hidden;">
+  <!-- decorative leaves -->
+  <div class="deco-leaf" style="width:220px;height:220px;top:-30px;left:-40px;transform:rotate(-30deg);"><img src="olive-branch.png" alt=""></div>
+  <div class="deco-leaf" style="width:180px;height:180px;bottom:-20px;right:-30px;transform:rotate(150deg);"><img src="leaf-branch.png" alt=""></div>
   <div class="section-inner-sm fade-up">
     <span class="tag">למה זה חשוב</span>
     <h2 class="section-title">המזון הונדס.<br>הגוף שלנו משלם את המחיר — כל יום.</h2>
@@ -1093,7 +1107,10 @@
 <!-- ═══════════════════════════════════════════
      SECTION 4+5 — BONUSES + PRICING SIDE BY SIDE
 ═══════════════════════════════════════════ -->
-<section id="bonuses">
+<section id="bonuses" style="position:relative;overflow:hidden;">
+  <!-- decorative leaves -->
+  <div class="deco-leaf" style="width:260px;height:260px;top:-40px;right:-50px;transform:rotate(20deg);"><img src="olive-branch.png" alt=""></div>
+  <div class="deco-leaf" style="width:200px;height:200px;bottom:-30px;left:-40px;transform:rotate(-160deg);"><img src="leaf-branch.png" alt=""></div>
   <div class="bonuses-outer fade-up" style="padding: 32px 0 0;">
     <div class="text-center">
       <span class="tag">בונוסים בלעדיים</span>
